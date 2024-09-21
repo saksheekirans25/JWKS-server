@@ -50,3 +50,15 @@ def generate_rsa_key_pair():
     }
 
     return private_key, jwk
+
+# Store public keys (JWKs)
+jwks_keys = []
+
+# Generate and store an initial key pair
+private_key, jwk = generate_rsa_key_pair()
+jwks_keys.append(jwk)
+
+# JWKS endpoint to serve the public keys
+@app.route('/.well-known/jwks.json')
+def jwks():
+    return jsonify({"keys": jwks_keys})
