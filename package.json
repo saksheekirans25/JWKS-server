@@ -1,0 +1,15 @@
+{
+  "name": "JWKS-server",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.2.0",
+    "mocha": "^10.7.3",
+    "chai": "^5.1.1",
+    "nyc": "^17.1.0"
+  }
+}
