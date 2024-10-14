@@ -1,5 +1,5 @@
 {
-  "name": "JWKS-server",
+  "name": "jwks-server",
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
